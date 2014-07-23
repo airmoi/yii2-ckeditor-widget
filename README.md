@@ -1,7 +1,7 @@
 CKEditor Widget for Yii2
 ========================
 
-WYSIWYG HTML input widget for Yii2.
+WYSIWYG HTML editor widget for Yii2 based on [CKEditor](http://ckeditor.com/).
 
 Installation
 ------------
@@ -33,7 +33,7 @@ use himiklab\ckeditor\CKEditor;
 ]) ?>
 ```
 
-Using inline:
+Using as inline field:
 
 ```php
 use himiklab\ckeditor\CKEditor;

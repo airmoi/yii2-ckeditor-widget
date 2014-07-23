@@ -1,23 +1,26 @@
 {
 	"name": "himiklab/yii2-ckeditor-widget",
-	"description": "CKEditor widget for Yii2",
-	"keywords": ["yii2", "ckeditor", "widget"],
+	"description": "WYSIWYG editor widget for Yii2",
+	"keywords": ["yii2", "ckeditor", "WYSIWYG", "widget"],
 	"type": "yii2-extension",
 	"license": "MIT",
 	"support": {
-		"source": "https://github.com/himiklab/yii2-ckeditor-widget"
+		"source": "https://github.com/himiklab/yii2-ckeditor-widget",
+        "issues" : "https://github.com/himiklab/yii2-ckeditor-widget/issues"
 	},
 	"authors": [
-		{
-			"name": "HimikLab",
-			"email": "himiklab@yandex.ru"
-		}
+        {
+            "name": "HimikLab",
+            "homepage" : "https://github.com/himiklab/"
+        }
 	],
 	"require": {
 		"yiisoft/yii2": "*",
         "ckeditor/ckeditor": "dev-full/stable"
 	},
 	"autoload": {
-		"psr-4": { "himiklab\\ckeditor\\": "" }
+		"psr-4": {
+            "himiklab\\ckeditor\\": ""
+        }
 	}
 }
