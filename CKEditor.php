@@ -27,7 +27,8 @@ use yii\widgets\InputWidget;
  * echo CKEditor::widget([
  *      'name' => 'comment',
  *      'value' => 'Please write your comment',
- *      'editorOptions' => ['height' => '500px']
+ *      'editorOptions' => ['height' => '500px'],
+ *      'useBrowserSpellChecker' => true
  * ]);
  * ```
  *
@@ -42,12 +43,18 @@ class CKEditor extends InputWidget
      */
     public $editorOptions = [];
 
+    /** @var bool Use the built-in words spell checker if browser provides one */
+    public $useBrowserSpellChecker = false;
+
     public function init()
     {
         parent::init();
 
         $view = $this->getView();
         $id = Json::encode($this->options['id']);
+        if ($this->useBrowserSpellChecker) {
+            $this->editorOptions = ['disableNativeSpellChecker' => false] + $this->editorOptions;
+        }
 
         $jsData = "CKEDITOR.replace($id";
         $jsData .= empty($this->editorOptions) ? '' : (', ' . Json::encode($this->editorOptions));
