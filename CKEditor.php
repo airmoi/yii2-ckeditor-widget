@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace himiklab\ckeditor;
+namespace airmoi\ckeditor;
 
 use yii\helpers\Html;
 use yii\helpers\Json;

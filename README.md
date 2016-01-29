@@ -10,12 +10,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require "himiklab/yii2-ckeditor-widget" "*"
+php composer.phar require "airmoi/yii2-ckeditor-widget" "*"
 ```
 or add
 
 ```json
-"himiklab/yii2-ckeditor-widget" : "*"
+"airmoi/yii2-ckeditor-widget" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -25,7 +25,7 @@ Usage
 Using as field in ActiveForm:
 
 ```php
-use himiklab\ckeditor\CKEditor;
+use airmoi\ckeditor\CKEditor;
 
 
 <?= $form->field($model, 'text')->widget(CKEditor::className(), [
@@ -36,7 +36,7 @@ use himiklab\ckeditor\CKEditor;
 Using as inline field:
 
 ```php
-use himiklab\ckeditor\CKEditor;
+use airmoi\ckeditor\CKEditor;
 
 <?= CKEditor::widget([
     'name' => 'comment',
