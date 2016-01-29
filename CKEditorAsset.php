@@ -11,14 +11,26 @@ use yii\web\AssetBundle;
 
 class CKEditorAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/ckeditor/ckeditor';
+    public $version = '4.5.6';
+    public $package = 'basic';
+    
+    public $sourcePath = '';
 
     public $js = [
-        'ckeditor.js',
-        'adapters/jquery.js'
     ];
 
     public $depends = [
         'yii\web\JqueryAsset'
     ];
+    
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        parent::init();
+        $jsPath = "//cdn.ckeditor.com/$version/$package/ckeditor.js";
+        
+        $this->js = [$jsPath];
+    }
 }
