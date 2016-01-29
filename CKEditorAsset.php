@@ -14,7 +14,7 @@ class CKEditorAsset extends AssetBundle
     public $version = '4.5.6';
     public $package = 'basic';
     
-    public $sourcePath = '';
+    //public $sourcePath = '';
 
     public $js = [
     ];
@@ -29,8 +29,9 @@ class CKEditorAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $jsPath = "//cdn.ckeditor.com/$version/$package/ckeditor.js";
+        $jsPath = "//cdn.ckeditor.com/{$this->version}/{$this->package}/ckeditor.js";
         
         $this->js = [$jsPath];
+        
     }
 }
