@@ -1,17 +1,17 @@
 {
-  "name": "himiklab/yii2-ckeditor-widget",
+  "name": "airmoi/yii2-ckeditor-widget",
   "description": "WYSIWYG editor widget for Yii2",
   "keywords": ["yii2", "ckeditor", "WYSIWYG", "widget"],
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
-    "source": "https://github.com/himiklab/yii2-ckeditor-widget",
-    "issues": "https://github.com/himiklab/yii2-ckeditor-widget/issues"
+    "source": "https://github.com/airmoi/yii2-ckeditor-widget",
+    "issues": "https://github.com/airmoi/yii2-ckeditor-widget/issues"
   },
   "authors": [
     {
-      "name": "HimikLab",
-      "homepage": "https://github.com/himiklab/"
+      "name": "Airmoi",
+      "homepage": "https://github.com/airmoi/"
     }
   ],
   "require": {
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "himiklab\\ckeditor\\": ""
+      "airmoi\\ckeditor\\": ""
     }
   }
 }
